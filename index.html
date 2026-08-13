@@ -52,7 +52,25 @@
   <p>Por: Lais Inácio
   <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar a Copa do Mundo e sus resultados.</p>
     <blockquote>
-    </div>
-</main>
+    <button>💚<span>0</span></button>
+    <button>👎<span>5</span></button>
+      </div>
+      </main>
+  
 </body>
+<script>
+     const botoes = document.querySelectorAll("button");
+
+     botoes.forEach(function(botao) {
+       botao.addEventListemer("click",  botaoClicado);
+
+       function botaoClicado() { 
+          console.log;
+          let texto = botao.querySelector("span");
+          if (texto) { 
+              texto.textConect++;
+          }
+       }
+   });
+</script>
 </html>
